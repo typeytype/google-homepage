@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <style>
+            a:link {
+                text-decoration: none;
+                color: black;
+            }
+
+            a:visited {
+                color: black;
+            }
+            
+            body {
+                text-align: center;
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 0.8em;
+
+            }
+            #navbarleft li {
+                display: inline-block;
+
+
+            }
+
+            #navbarleft ul {
+                list-style-type: none;
+                line-height: 4vh;
+            }
+
+            #navbarright li {
+                display: inline-block;
+
+            }
+
+            #navbarright ul {
+             list-style-type: none;
+             line-height: 4vh;
+            }
+            
+            header {
+
+            }
+
+            main {
+
+            }
+
+            footer {
+
+            }
+
+            #navbar {
+             
+
+            }
+
+            #logo {
+                width: 50%;
+                max-width: 30em;
+            }
+
+            #navbarleft {
+                position: fixed;
+                text-align: left;
+                top: 0px;
+                left: 0px;
+                width: 50%;
+                height: 10%;
+            }
+
+            #navbarright {
+                position: fixed;
+                text-align: right;
+                top: 0px;
+                left: 75%;
+                width: 50%%;
+                height: 10%;
+                
+             }
+/*
+            #displaypic {
+                height: 4vh;
+                border-radius: 50%;
+                padding-left: 7vw;
+
+            }
+*/
+            .li {
+                padding-left: 7px;
+                padding-right: 7px; 
+            }
+
+            #store {
+                padding-left: 7vw;
+            }
+
+            #gmail {
+                padding-left: 80%;
+
+            
+            }
+
+
+            #images {
+              
+            }
+
+            #navbar a:hover {
+                text-decoration: underline;
+            }
+
+            #search {
+                
+            }
+
+            #searchbar {
+                border-color: white;
+                width: 50%;
+            }
+
+            button {
+                background-color: white;
+                border-color: white;
+                margin: 20px;
+            }
+            #note {
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                width: 100%;
+                color: rgba(170, 170, 170, 1);
+                background-color: #d3d3d3;
+                text-align: left;
+                display: inline-block;
+            }
+
+            #UK {
+                text-align: left;
+                padding-left: 15px;
+                padding-top: 3px;
+            }
+
+            #advertising {
+
+            }
+
+            #business {
+                padding-left: 5%;
+            }
+
+            #howsearchworks {
+                padding-left: 5%;
+
+            }
+
+            #carbonneutral {
+                padding-left: 10%;
+                white-space: nowrap;
+
+            }
+
+            #privacy {
+                padding-left: 12%;
+                white-space: nowrap;
+
+
+            }
+
+            #terms {
+                padding-left: 5%;
+            }
+            
+            #settings {
+                padding-left: 5%;
+            }
+
+        </style>
+    </head>
+    <body>
+          <header>
+              <div id='navbar'>
+             <nav id='navbarleft'>
+                <span id='leftside'><ul>
+                    <li><a href='#' id='about'>About</a></li>
+                    <li><a href='#1' id='store'>Store</a></li>
+                </span></nav>
+                <nav id='navbarright'>
+                <span id='rightside'>
+                    <li><a href='#2' id='gmail'>Gmail</a></li>
+                    <li><a href='#3' id='store'>Images</a></li>
+                    <!-- 
+                    <li><a href='#4' id='picturespace'><img src=https://pbs.twimg.com/profile_images/1237550450/mstom_400x400.jpg id='displaypic'>
+                    </li></a>-->
+                </ul>
+                </span>
+             </nav>
+            </div>
+         </header><br><br><br>
+        <main id='search'>
+            <div id='logospace'>
+                <img id='logo' src=https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png>
+            </div><br>
+            <div id='middle'>
+                <input id='searchbar' type='search'>
+            </div><br>
+            <span>
+                <button>Google Search</button><button>I'm Feeling Lucky</button>
+            </span>
+        </main>
+        <footer id='note'>
+            <div id='UK'>United Kingdom</div><hr>
+            <div id='bottom'>
+                <span id='leftbottom'><ul>
+                    <a href='#' id='advertising'>Advertising</a>               
+                    <a href='#' id='business'>Business</a>
+                    <a href='#' id='howsearchworks'>How Search Works</a>
+                </span>
+                <span id='middlebottom'>
+                    <a href='#' id='carbonneutral'><img id='leaf' alt='leafpic' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC>Carbon neutral since 2007</a>
+                </span>
+                <span id='rightbottom'>
+                <a href='#' id='privacy'>Privacy</a>
+                <a href='#' id='terms'>Terms</a>
+                <a href='#' id='settings'>Settings</a>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>
